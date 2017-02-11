@@ -1,0 +1,57 @@
+
+.App {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align: center;
+}
+
+.circles {
+	transition: all 1s ease-in-out;
+  fill:black;
+  r:10;
+}
+.circles:hover{
+  r:15;
+}
+.circles-enter {
+  fill:blue !important; 
+  opacity: 0.2;
+  r:0;
+  transition: all 1s ease-in-out;
+}
+
+.circles-enter.circles-enter-active {
+  fill:blue !important;
+  opacity: 1;
+  transition: r 500ms ease-in;
+  transition: opacity 2500ms ease-in;
+  transition: color 2500ms ease-in;
+}
+
+.circles-leave {
+  fill:red !important;
+  opacity: 1;
+}
+
+.circles-leave.circles-leave-active {
+  fill:red !important;
+  opacity: 0.01;
+  transition: all 1000ms ease-in;
+  cy:470;
+  r:0;
+}
+
+.axis {
+  transition: all 1000ms ease-in;
+}
+.tooltip {
+  opacity:1;
+  z-index:100000!important;
+  position:absolute;
+  height:80px;
+  width:60px;
+  fill:pink;
+  mouse-events:none;
+}
