@@ -11,8 +11,7 @@
     "react-addons-css-transition-group": "^15.4.2",
     "react-addons-transition-group": "^15.4.2",
     "react-bootstrap": "^0.30.7",
-    "react-dom": "^15.4.2",
-    "topojson": "^2.2.0"
+    "react-dom": "^15.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
